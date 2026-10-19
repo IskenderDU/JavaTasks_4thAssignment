@@ -1,34 +1,34 @@
 public class Task2 {
-    public static void print(int N, char c) {
+    public static void print(int N) {
         for (int i=1; i<=N; i++) {
-            System.out.print(c);
+            System.out.print("*");
         }
         System.out.println();
     }
 
-    public static void printSpaces(int N, char c1){
-        System.out.print(c1);
+    public static void printSpaces(int N){
+        System.out.print("*");
         for (int i = 1; i<=(N-2); i++) {
             System.out.print(" ");
         }
-        System.out.print(c1);
+        System.out.print("*");
         System.out.println();
     }
 
-    public static void printRows(int N, char c2) {
+    public static void printRows(int N) {
         for (int i = 1; i<=(N-2); i++) {
-            printSpaces(N, c2);
+            printSpaces(N);
         }
     }
 
-    public static void printHollowSquare(int N, char c){
-        print(N, c);
-        printRows(N, c);
+    public static void printHollowSquare(int N){
+        print(N);
+        printRows(N);
         for (int i=1; i<=N; i++) {
-            System.out.print(c);
+            System.out.print("*");
         }
     }
     public static void main(String[] args) {
-        printHollowSquare(8, '-');
+        printHollowSquare(4);
     }
 }
