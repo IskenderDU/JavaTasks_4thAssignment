@@ -30,5 +30,6 @@ public class Task2 {
     }
     public static void main(String[] args) {
         printHollowSquare(4);
+        System.out.println();
     }
 }
